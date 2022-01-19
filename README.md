@@ -7,4 +7,5 @@
 
 ## Question Two
 ### a. After a quick  select * query on the Shippers table to check the ShipperID for Speedy Express, the query "SELECT count(OrderID) FROM orders where ShipperID = 1;" tells us that Speedy Express shipped a total of 54 packages. ![Image](https://github.com/twolightsabovethesea/shopify-data-science/blob/main/images/query_a.png)
+### b. A more complex query including a join was needed for part b. The following query reveals that Callahan had the most orders, coming in at 216: "SELECT Orders.EmployeeID, Employees.LastName, sum(Orders.EmployeeID) as Total FROM Orders LEFT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID GROUP BY Orders.EmployeeID ORDER BY Total DESC;". ![Image](https://github.com/twolightsabovethesea/shopify-data-science/blob/main/images/query_b.png)
 
