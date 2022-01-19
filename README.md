@@ -6,5 +6,5 @@
 ### c. After cleaning the data, the AOV as originally requested turns out to be $302.58.
 
 ## Question Two
-### a. After a quick query to check the ShipperID for Speedy Express, the query "SELECT count(OrderID) FROM orders where ShipperID = 1;" tells us that Speedy Express shipped a total of 54 packages.
+### a. After a quick  select * query on the Shippers table to check the ShipperID for Speedy Express, the query "SELECT count(OrderID) FROM orders where ShipperID = 1;" tells us that Speedy Express shipped a total of 54 packages. ![Image](https://github.com/twolightsabovethesea/shopify-data-science/blob/main/images/query_a.png)
 
